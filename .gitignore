@@ -38,7 +38,6 @@
 *.rbc
 
 /.bundle
-/Gemfile.lock
 /Gemfile.local
 
 config/database.yml\nconfig/secrets.yml

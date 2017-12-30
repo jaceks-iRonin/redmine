@@ -3,6 +3,7 @@ lock "~> 3.10.1"
 
 set :application, "redmine"
 set :repo_url, "git@github.com:jaceks-iRonin/redmine.git"
+set :bundle_gemfile, "app/Gemfile"
 
 set :deploy_to, '/home/deploy/redmine'
 
