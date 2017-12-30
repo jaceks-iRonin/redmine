@@ -41,11 +41,10 @@
 #
 # Global options
 # --------------
-#  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+set :ssh_options, {
+  user: "root",
+  keys: ["~/.ssh/id_rsa"]
+}
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
@@ -59,4 +58,4 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-server '46.101.215.70', user: 'deploy', roles: %w{app db web}
+server '46.101.215.70', user: 'root', roles: %w{app db web}
